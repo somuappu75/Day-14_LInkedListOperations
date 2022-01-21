@@ -179,6 +179,25 @@ namespace Ds_LInkedListOperations
             }
             return count;
         }
+
+        //element sorting
+        public void Sort()
+        {
+            Node i, j;
+            int temp;
+            for (i = this.head; i.next != null; i = i.next)
+            {
+                for (j = i.next; j != null; j = j.next)
+                {
+                    if (i.data > j.data)
+                    {
+                        temp = i.data;
+                        i.data = j.data;
+                        j.data = temp;
+                    }
+                }
+            }
+        }
         //Displaying nodes
         public void Display()
         {
