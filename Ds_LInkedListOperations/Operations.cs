@@ -131,6 +131,22 @@ namespace Ds_LInkedListOperations
 
         }
 
+        public Node Search(int value)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Console.WriteLine("Element found.. " + value);
+                    return temp;
+                }
+                temp = temp.next;
+
+            }
+            Console.WriteLine("Element not found---------");
+            return default;
+        }
 
         //Displaying nodes
         public void Display()
