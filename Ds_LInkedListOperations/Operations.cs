@@ -148,6 +148,16 @@ namespace Ds_LInkedListOperations
             return default;
         }
 
+
+        public int Insert(int searchdata, int data)
+        {
+            Node temp = Search(searchdata);
+            Node newNode = new Node(data);
+            newNode.next = temp.next;
+            temp.next = newNode;
+            return (newNode.data);
+
+        }
         //Displaying nodes
         public void Display()
         {
