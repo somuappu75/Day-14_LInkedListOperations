@@ -23,7 +23,14 @@ namespace Ds_LInkedListOperations
             }
             Console.WriteLine("Inserted into list " + new_node.data);
         }
-
+        //Insert Top
+        public void InsertFront(int new_data)
+        {
+            Node new_node = new Node(new_data);
+            new_node.next = this.head;
+            this.head = new_node;
+            Console.WriteLine("Inserted the list in front " + new_node.data);
+        }
         public Node GetLastNode()
         {
             Node temp = this.head;
@@ -33,6 +40,7 @@ namespace Ds_LInkedListOperations
             }
             return temp;
         }
+       
         //Displaying nodes
         public void Display()
         {
