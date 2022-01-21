@@ -148,7 +148,7 @@ namespace Ds_LInkedListOperations
             return default;
         }
 
-
+        // insert method added
         public int Insert(int searchdata, int data)
         {
             Node temp = Search(searchdata);
