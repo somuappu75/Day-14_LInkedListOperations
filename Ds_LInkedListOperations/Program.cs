@@ -72,6 +72,15 @@ namespace Ds_LInkedListOperations
                     obj.Display();
                     break;
 
+                case 9:
+                    obj.InsertLast(56);
+                    obj.InsertLast(30);
+                    obj.InsertLast(40);
+                    obj.InsertLast(70);
+                    Console.WriteLine(" soretd elements");
+                    obj.Sort();
+                    obj.Display();
+                    break;
 
 
             }
