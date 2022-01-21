@@ -6,35 +6,44 @@ namespace Ds_LInkedListOperations
     {
         static void Main(string[] args)
         {
-            ////uc-1
-            //Operations obj = new Operations();
-            ////Insertion Operation
-            //obj.InsertLast(56);
-            //obj.InsertLast(30);
-            //obj.InsertLast(70);
-            ////Display Operation
-            //Console.WriteLine("--------insertion at Last-------");
-            //obj.Display();
-            //// Console.WriteLine("Hello World!");
-
-            ////UseCase 2
-            //Operations obj = new Operations();
-            ////Insertion Operation
-            //obj.InsertFront(56);
-            //obj.InsertFront(30);
-            //obj.InsertFront(70);
-            ////Display Operation
-            //Console.WriteLine("------Insertion at Top------");
-            //obj.Display();
-
+            Console.WriteLine("linked list operations");
+            Console.WriteLine("\n1.insert last \n2.insert first \n3.insert middle \n4.Delete first \n5.Delete Last \n");
+            Console.WriteLine("Enter Your choice");
+            int num = Convert.ToInt32(Console.ReadLine());
             Operations obj = new Operations();
-            //Insertion Operation
-            obj.InsertLast(56);
-            obj.Insert_Between(2, 30);
-            obj.InsertLast(70);
-            //Display Operation
-            Console.WriteLine("----insert At Middle-------");
-            obj.Display();
+            switch (num)
+            {
+                case 1:
+                    obj.InsertLast(56);
+                    obj.InsertLast(30);
+                    obj.InsertLast(70);
+                    obj.Display();
+                    break;
+                case 2:
+                    obj.InsertFront(56);
+                    obj.InsertFront(30);
+                    obj.InsertFront(70);
+                    obj.Display();
+                    break;
+                case 3:
+                    obj.InsertLast(56);
+                    obj.InsertLast(70);
+                    obj.Insert_Between(2, 30);
+                    obj.Display();
+                    break;
+                case 4:
+                    obj.InsertFront(56);
+                    obj.InsertFront(30);
+                    obj.InsertFront(70);
+                    obj.DeleteFirst();
+                    obj.Display();
+                    break;
+
+
+            }
+            Console.ReadLine();
+
+
         }
     }
     }
