@@ -82,7 +82,9 @@ namespace Ds_LInkedListOperations
                     obj.Display();
                     break;
 
-
+                default:
+                    Console.WriteLine("Enter a valid option");
+                    break;
             }
             Console.ReadLine();
 
