@@ -110,6 +110,28 @@ namespace Ds_LInkedListOperations
             return this.head;
         }
 
+        public Node DeleteLast()
+        {
+            Node newNode = this.head;
+            if (this.head == null)
+            {
+                return null;
+            }
+            if (this.head.next == null)
+            {
+                this.head = null;
+                return null;
+            }
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            newNode.next = null;
+            return newNode;
+
+        }
+
+
         //Displaying nodes
         public void Display()
         {
