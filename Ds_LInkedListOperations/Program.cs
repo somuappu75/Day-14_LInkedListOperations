@@ -17,14 +17,22 @@ namespace Ds_LInkedListOperations
             //obj.Display();
             //// Console.WriteLine("Hello World!");
 
-            //UseCase 2
+            ////UseCase 2
+            //Operations obj = new Operations();
+            ////Insertion Operation
+            //obj.InsertFront(56);
+            //obj.InsertFront(30);
+            //obj.InsertFront(70);
+            ////Display Operation
+            //Console.WriteLine("------Insertion at Top------");
+            //obj.Display();
+
             Operations obj = new Operations();
             //Insertion Operation
-            obj.InsertFront(56);
-            obj.InsertFront(30);
-            obj.InsertFront(70);
-            //Display Operation
-            Console.WriteLine("------Insertion at Top------");
+            obj.Append(56);
+            obj.Append(30);
+            obj.Append(70);
+            Console.WriteLine("-----Appending----");
             obj.Display();
         }
     }
