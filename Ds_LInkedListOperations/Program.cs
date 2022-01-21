@@ -6,7 +6,7 @@ namespace Ds_LInkedListOperations
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("linked list operations");
+            Console.WriteLine("---------linked list operations---------");
             Console.WriteLine("\n1.insert last \n2.insert first \n3.insert middle \n4.Delete first \n5.Delete Last \n");
             Console.WriteLine("Enter Your choice");
             int num = Convert.ToInt32(Console.ReadLine());
@@ -36,6 +36,14 @@ namespace Ds_LInkedListOperations
                     obj.InsertFront(30);
                     obj.InsertFront(70);
                     obj.DeleteFirst();
+                    obj.Display();
+                    break;
+
+                case 5:
+                    obj.InsertLast(56);
+                    obj.InsertLast(30);
+                    obj.InsertLast(70);
+                    obj.DeleteLast();
                     obj.Display();
                     break;
 
