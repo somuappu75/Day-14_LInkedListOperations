@@ -100,6 +100,16 @@ namespace Ds_LInkedListOperations
             }
         }
 
+        public Node DeleteFirst()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
+        }
+
         //Displaying nodes
         public void Display()
         {
