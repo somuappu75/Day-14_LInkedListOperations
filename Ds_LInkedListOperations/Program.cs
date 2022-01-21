@@ -29,10 +29,11 @@ namespace Ds_LInkedListOperations
 
             Operations obj = new Operations();
             //Insertion Operation
-            obj.Append(56);
-            obj.Append(30);
-            obj.Append(70);
-            Console.WriteLine("-----Appending----");
+            obj.InsertLast(56);
+            obj.Insert_Between(2, 30);
+            obj.InsertLast(70);
+            //Display Operation
+            Console.WriteLine("----insert At Middle-------");
             obj.Display();
         }
     }
